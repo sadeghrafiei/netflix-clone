@@ -1,0 +1,41 @@
+[debug] [2021-02-14T20:17:10.110Z] ----------------------------------------------------------------------
+[debug] [2021-02-14T20:17:10.114Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-14T20:17:10.115Z] CLI Version:   9.3.0
+[debug] [2021-02-14T20:17:10.115Z] Platform:      win32
+[debug] [2021-02-14T20:17:10.115Z] Node Version:  v14.15.4
+[debug] [2021-02-14T20:17:10.117Z] Time:          Sun Feb 14 2021 23:47:10 GMT+0330 (وقت عادی ایران)
+[debug] [2021-02-14T20:17:10.117Z] ----------------------------------------------------------------------
+[debug] [2021-02-14T20:17:10.117Z] 
+[debug] [2021-02-14T20:17:10.122Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-02-14T20:17:10.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-14T20:17:10.171Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Ofogh Rayaneh\Desktop\netflix\netflix-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-14T20:17:20.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-14T20:17:21.109Z] Failed to make request: FetchError: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
+[debug] [2021-02-14T20:17:21.637Z] FirebaseError: Failed to make request: FetchError: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
+    at Client.request (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:99:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getProjectPage (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:232:17)
+    at async getFirebaseProjectPage (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:249:23)
+    at async selectProjectInteractively (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\Ofogh Rayaneh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
